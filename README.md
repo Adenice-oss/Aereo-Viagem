@@ -1,2 +1,2 @@
 # Aereo Viagem
- Primeiro repositório baseado nos conheciemntos adiquiridos no curso de Programação.
+ Primeiro repositório baseado nos conhecimentos adiquiridos no curso de Programação.
