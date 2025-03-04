@@ -13,6 +13,13 @@
     width: 100px; /* Ajuste conforme necessário */
     height: auto;
 }
+body {
+    background-image: url("imagens/fundo.jpg"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 /* Fonte geral */
 body {
