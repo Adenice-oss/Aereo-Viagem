@@ -74,7 +74,7 @@ header {
 
 /* Cabeçalho do formulário */
 .form-header {
-  background-color: #5b1ebc; /* Cor roxa como na imagem */
+  background-color: aquamarine;
   color: white;
   text-align: center;
   padding: 10px;
@@ -116,7 +116,7 @@ input[type="radio"], input[type="checkbox"] {
 
 /* Botão estilizado */
 .botao-submit {
-  background-color: #5b1ebc;
+  background-color: aquamarine;
   color: white;
   padding: 10px;
   font-size: 16px;
@@ -128,7 +128,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .botao-submit:hover {
-  background-color: #4a0fa5;
+  background-color: #1e3a5f;
 }
 
   .promocoes {
