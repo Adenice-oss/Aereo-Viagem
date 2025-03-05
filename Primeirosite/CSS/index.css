@@ -56,7 +56,7 @@ header {
   }
   
   .form-container {
-    /* Estilização do formulário */
+   /* Estilização do formulário */
 .formulario-container {
   display: flex;
   justify-content: center;
@@ -68,56 +68,55 @@ header {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
-  width: 400px;
+  width: 700px; /* Aumenta a largura do formulário */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Cabeçalho do formulário */
 .form-header {
+  background-color: #5b1ebc; /* Cor roxa como na imagem */
+  color: white;
   text-align: center;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .icone-aviao {
-  width: 40px;
-  margin-bottom: 10px;
+  width: 20px; /* Ajusta o tamanho do ícone */
 }
 
-h2 {
-  color: #1e3a5f;
-  font-size: 22px;
-}
-
-p {
-  font-size: 14px;
-  color: #555;
-}
-
-label {
-  font-weight: bold;
-  margin-top: 10px;
-  display: block;
-}
-
-input {
+/* Ajuste dos inputs */
+input, select {
   width: 100%;
-  padding: 10px;
-  margin: 5px 0 15px 0;
-  border: 2px solid #1e3a5f;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.radio-group, .checkbox-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.radio-group input, .checkbox-group input {
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
   margin-right: 5px;
 }
 
+/* Organiza os campos de data lado a lado */
+.data-group {
+  display: flex;
+  gap: 20px;
+}
+
+.data-group div {
+  flex: 1;
+}
+
+/* Botão estilizado */
 .botao-submit {
-  background-color: #1e3a5f;
+  background-color: #5b1ebc;
   color: white;
   padding: 10px;
   font-size: 16px;
@@ -129,7 +128,7 @@ input {
 }
 
 .botao-submit:hover {
-  background-color: #17496d;
+  background-color: #4a0fa5;
 }
 
   .promocoes {

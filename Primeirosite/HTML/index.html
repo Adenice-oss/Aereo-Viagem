@@ -19,13 +19,14 @@
   <section class="banner">
     <div class="form-container">
       <h2>Solicite seu Orçamento</h2>
-      <section class="formulario-container">
+      <<section class="formulario-container">
         <form class="formulario">
           <div class="form-header">
             <img src="../imagens/icone-aviao.png" alt="Ícone Avião" class="icone-aviao">
             <h2>Solicite um orçamento</h2>
-            <p>Informe seus dados</p>
           </div>
+      
+          <p>Informe seus dados</p>
       
           <label for="nome">Nome</label>
           <input type="text" id="nome" placeholder="Nome completo" required>
@@ -36,17 +37,30 @@
           <label for="celular">Celular</label>
           <input type="tel" id="celular" placeholder="(xx) xxxxx-xxxx" required>
       
-          <label for="ida">Data de Ida</label>
-          <input type="date" id="ida" required>
-      
-          <label for="volta">Data de Volta</label>
-          <input type="date" id="volta" required>
+          <div class="data-group">
+            <div>
+              <label for="ida">Data de Ida</label>
+              <input type="date" id="ida" required>
+            </div>
+            <div>
+              <label for="volta">Data de Volta</label>
+              <input type="date" id="volta" required>
+            </div>
+          </div>
       
           <label for="origem">Origem</label>
-          <input type="text" id="origem" placeholder="Partindo de" required>
+          <select id="origem">
+            <option>Partindo de</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+          </select>
       
           <label for="destino">Destino</label>
-          <input type="text" id="destino" placeholder="Indo para" required>
+          <select id="destino">
+            <option>Indo para</option>
+            <option>Nova York</option>
+            <option>Paris</option>
+          </select>
       
           <label>Quarto com cama infantil?</label>
           <div class="radio-group">
@@ -68,7 +82,7 @@
             <label for="suite">Suíte</label>
           </div>
       
-          <button type="submit" class="botao-submit">Solicitar Dados</button>
+          <button type="submit" class="botao-submit">Solicitar dados</button>
         </form>
       </section>
       
