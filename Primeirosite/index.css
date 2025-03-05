@@ -22,10 +22,16 @@
     
 }
 body {
-    background-image: url("imagens/fundo.jpg"); 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
+        background-image: url("imagens/fundo.jpg"); /* Caminho da imagem */
+        background-size: cover; /* Faz a imagem cobrir toda a tela */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        height: 100vh; /* Garante que a imagem cubra toda a altura da tela */
+        width: 100vw; /* Garante que a imagem cubra toda a largura da tela */
+    }
+    
+    }
+    
 }
 
 
