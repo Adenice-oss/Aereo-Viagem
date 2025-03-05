@@ -61,15 +61,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .formulario {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
   border-radius: 10px;
-  width: 700px; /* Aumenta a largura do formulário */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px; /* Aumenta a largura do formulário */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Cabeçalho do formulário */
@@ -180,28 +180,45 @@ input[type="radio"], input[type="checkbox"] {
 
   
   footer {
-    background-color: #1e3a5f; /* Azul */
-    color: white;
-    padding: 20px;
-    text-align: center;
+    footer {
+      background-color: #0057b3; /* Azul do footer */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+    
+    .footer-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Espaço entre os ícones */
+      margin-top: 10px;
+    }
+    
+    .footer-links img {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .footer-text {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    
+    .footer-text a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
   }
-  
-  footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  .social-icon {
-    margin: 0 10px;
-  }
-  
-  .social-icon img {
-    width: 30px;
-    height: 30px;
-  }
-  
-}
+}    
