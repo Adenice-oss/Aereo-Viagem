@@ -222,48 +222,39 @@ figcaption {
 
 /* Rodapé */
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 30px 0;
-    margin-top: 40px;
-}
-
-.box-rodape {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    flex: 1;
-}
-
-.icon-texto {
-    display: flex;
-    align-items: center;
-}
-
-.icon-texto img {
-    width: 20px;
-    margin-right: 10px;
-}
-
-.icon-texto span {
-    font-size: 16px;
-}
-
-@media (max-width: 768px) {
-    .grupo-input-duplo {
-        flex-direction: column;
+    footer {
+        background-color: #005a8d; /* Azul */
+        color: white;
+        padding: 30px 0;
+        text-align: left;
     }
-
-    .grupo-input-duplo .grupo-label-input {
-        width: 100%;
+    
+    .container-footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
-
-    .container-imagens {
-        flex-direction: column;
+    
+    .contato, .redes-sociais {
+        flex: 1;
     }
-
-    .box-imagem {
-        grid-template-columns: 1fr;
+    
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
-}
-
+    
+    p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    
+    @media (max-width: 768px) {
+        .container-footer {
+            flex-direction: column;
+            text-align: center;
+        
+        }
