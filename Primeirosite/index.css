@@ -252,10 +252,10 @@ footer {
         margin: 5px 0;
     }
     
-    @media (max-width: 768px) {
-        .container-footer {
-            flex-direction: column;
-            text-align: center;
-        }
+   @media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
     }
-    
+}
+}
