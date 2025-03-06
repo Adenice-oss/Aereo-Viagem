@@ -1,8 +1,8 @@
-/* style.css */
+/* index.css */
 
 /* Definindo a imagem de fundo */
 .hero {
-  background-image: url('background-image.jpg'); /* Coloque o caminho da sua imagem */
+  background-image: url('background-imagens fundo.jpg'); /* Coloque o caminho da sua imagem */
   background-size: cover;
   background-position: center;
   height: 50vh;
