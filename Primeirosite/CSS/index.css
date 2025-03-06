@@ -2,14 +2,16 @@
 
 /* Definindo a imagem de fundo */
 .hero {
-  background-image: url('background-imagens fundo.jpg'); /* Coloque o caminho da sua imagem */
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-image: url('imagens/fundo.jpg'); /* Caminho correto para a sua imagem */
+  background-size: cover; /* A imagem cobre toda a área da seção */
+  background-position: center; /* A imagem ficará centralizada */
+  height: 50vh; /* Altura da seção (50% da altura da tela) */
+  display: flex; /* Usando Flexbox para alinhar itens */
+  justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
 }
 
 /* Estilo do formulário */
