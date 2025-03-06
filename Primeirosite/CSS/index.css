@@ -1,0 +1,27 @@
+/* style.css */
+
+/* Definindo a imagem de fundo */
+.hero {
+  background-image: url('background-image.jpg'); /* Coloque o caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo do formulário */
+.formulario {
+  margin: 40px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Personalizando o rodapé */
+footer {
+  margin-top: 40px;
+}
