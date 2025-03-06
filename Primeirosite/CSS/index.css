@@ -139,14 +139,15 @@ input[type="radio"], input[type="checkbox"] {
   }
   
   .cidade {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
   }
   
   .cidade img {
     width: 100%;
-    border-radius: 5px;
+    height: auto;
+    border-radius: 8px;
   }
   /* Call to Action (CTA) */
 .cta {
