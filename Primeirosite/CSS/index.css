@@ -139,36 +139,26 @@ input[type="radio"], input[type="checkbox"] {
   padding: 50px 0;
 }
 
-.cidades {
+.promocoes {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que os itens se ajustem na tela */
   justify-content: center;
-  gap: 20px;
-  max-width: 1200px; /* Limita o tamanho máximo */
-  margin: 0 auto;
+  gap: 20px; /* Espaçamento entre as imagens */
 }
 
-.cidade {
-  background: #f5f5f5;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-  width: 300px; /* Define uma largura fixa para os itens */
+.promocoes .cidade {
+  width: 300px; /* Defina o tamanho exato */
+  height: 200px;
+  overflow: hidden; /* Corta qualquer parte extra da imagem */
+  border-radius: 10px; /* Só para deixar mais bonito */
 }
 
-.cidade img {
+.promocoes .cidade img {
   width: 100%;
-  max-width: 300px; /* Garante que as imagens não fiquem enormes */
-  height: 200px; /* Define altura fixa */
-  object-fit: cover; /* Ajusta sem distorcer */
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o espaço corretamente */
 }
 
-.cidade p {
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: bold;
-}
 
   /* Call to Action (CTA) */
 .cta {
@@ -201,48 +191,4 @@ input[type="radio"], input[type="checkbox"] {
   background-color: #ffdb4d;
   transform: scale(1.05);
 }
-
-  footer {
-    footer {
-      background-color: #0057b3; /* Azul do footer */
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 50px;
-    }
-    
-    .footer-container {
-      width: 80%;
-      margin: 0 auto;
-    }
-  
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px; /* Espaço entre os ícones */
-      margin-top: 10px;
-    }
-    
-    .footer-links img {
-      width: 30px;
-      height: 30px;
-    }
-    
-    .footer-text {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-    
-    .footer-text a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    .footer-text a:hover {
-      text-decoration: underline;
-    }
   }
-}
-    
