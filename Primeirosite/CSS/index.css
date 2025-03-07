@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #005b96;
+    background: #d7e1e7;
     color: white;
     padding: 15px 0;
     display: flex;
@@ -58,6 +58,30 @@ nav ul li a {
     gap: 20px;
     padding: 20px;
 }
+
+/* Estilo dos Planos e Promoções com fundo mais suave */
+#planos .plano, #promocoes .promocao {
+    background-color: rgba(0, 0, 0, 0.2);  /* Fundo semitransparente mais suave */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  /* Títulos */
+  #planos .plano h3, #promocoes .promocao h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Textos */
+  #planos .plano p, #promocoes .promocao p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  
 
 img {
     max-width: 100%;
