@@ -59,6 +59,11 @@ nav ul li a {
     padding: 20px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .plano, .oferta {
     background: #f4f4f4;
     padding: 20px;
@@ -74,6 +79,13 @@ nav ul li a {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.oferta img {
+    width: 100%;
+    max-width: 250px; /* Ajuste esse valor conforme necessário */
+    height: auto;
+    border-radius: 10px;
 }
 
 .contato {
