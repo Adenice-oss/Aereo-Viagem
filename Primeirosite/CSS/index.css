@@ -59,6 +59,25 @@ nav ul li a {
   object-fit: cover;
   border-radius: 10px;
 }
+/* Ajuste geral para todas as imagens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajuste específico para o logo */
+.logo {
+  width: 20px; /* Define um tamanho fixo para o logo */
+  height: auto;
+}
+
+/* Ajuste para imagens dos destinos */
+.destino-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Cantos arredondados, opcional */
+}
+
 
 form {
   display: flex;
