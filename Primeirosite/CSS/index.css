@@ -49,7 +49,7 @@ nav ul li a {
     background: url('../imagens/fundo.jpg') no-repeat center/cover;
     background-size: cover;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 50px 20px;
     position: relative;
 }
