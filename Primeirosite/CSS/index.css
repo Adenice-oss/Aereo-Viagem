@@ -47,9 +47,22 @@ nav ul li a {
 
 .sobre {
     background: url('../imagens/fundo.jpg') no-repeat center/cover;
+    background-size: cover;
     text-align: center;
     color: white;
     padding: 50px 20px;
+    position: relative;
+}
+
+.sobre::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Filtro de escurecimento */
+    z-index: -1;  /* Coloca o filtro atrás do conteúdo */
 }
 
 .planos-container, .ofertas-container {
@@ -59,29 +72,34 @@ nav ul li a {
     padding: 20px;
 }
 
-/* Estilo dos Planos e Promoções com fundo mais suave */
+/* Estilo dos Planos e Promoções com gradiente de fundo */
+#planos, #promocoes {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../imagens/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
 #planos .plano, #promocoes .promocao {
-    background-color: rgba(0, 0, 0, 0.2);  /* Fundo semitransparente mais suave */
+    background-color: rgba(0, 0, 0, 0.2);  /* Fundo suave */
     color: white;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     margin: 10px;
-  }
-  
-  /* Títulos */
-  #planos .plano h3, #promocoes .promocao h3 {
+}
+
+#planos .plano h3, #promocoes .promocao h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-  }
-  
-  /* Textos */
-  #planos .plano p, #promocoes .promocao p {
+}
+
+#planos .plano p, #promocoes .promocao p {
     font-size: 1rem;
     line-height: 1.5;
-  }
-  
-  
+}
 
 img {
     max-width: 100%;
