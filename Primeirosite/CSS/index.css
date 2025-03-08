@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #b4b6dd;
+    background: #554b41;
     color: white;
     padding: 15px 0;
     display: flex;
@@ -76,7 +76,7 @@ nav ul li a {
 
 
 #planos .plano, #promocoes .promocao {
-    background-color: rgba(132, 136, 136, 0.8);  /* Fundo suave */
+    background-color: rgba(133, 90, 33, 0.8);  /* Fundo suave */
     color: white;
     padding: 20px;
     border-radius: 8px;
