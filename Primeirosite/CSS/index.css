@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #d7e1e7;
+    background: #b4b6dd;
     color: white;
     padding: 15px 0;
     display: flex;
@@ -49,7 +49,7 @@ nav ul li a {
     background: url('../imagens/fundo.jpg') no-repeat center/cover;
     background-size: cover;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(221, 209, 209);
     padding: 50px 20px;
     position: relative;
 }
@@ -72,18 +72,11 @@ nav ul li a {
     padding: 20px;
 }
 
-/* Estilo dos Planos e Promoções com gradiente de fundo */
-#planos, #promocoes {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../imagens/fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 50px 20px;
-    color: white;
-    text-align: center;
-}
+
+
 
 #planos .plano, #promocoes .promocao {
-    background-color: rgba(110, 102, 102, 0.8);  /* Fundo suave */
+    background-color: rgba(132, 136, 136, 0.8);  /* Fundo suave */
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -107,7 +100,7 @@ img {
 }
 
 .plano, .oferta {
-    background: #504848;
+    background: #585154;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -152,7 +145,7 @@ form button {
 }
 
 footer {
-    background: #40474b;
+    background: #1d1d1f;
     color: white;
     text-align: center;
     padding: 20px;
