@@ -74,7 +74,7 @@ nav ul li a {
 
 /* Estilo dos Planos e Promoções com gradiente de fundo */
 #planos, #promocoes {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../imagens/fundo.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../imagens/fundo.jpg');
     background-size: cover;
     background-position: center;
     padding: 50px 20px;
@@ -83,7 +83,7 @@ nav ul li a {
 }
 
 #planos .plano, #promocoes .promocao {
-    background-color: rgba(0, 0, 0, 0.2);  /* Fundo suave */
+    background-color: rgba(110, 102, 102, 0.8);  /* Fundo suave */
     color: white;
     padding: 20px;
     border-radius: 8px;
@@ -107,7 +107,7 @@ img {
 }
 
 .plano, .oferta {
-    background: #f4f4f4;
+    background: #534d4d;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -116,7 +116,7 @@ img {
 
 .plano button, .oferta button {
     background: #005b96;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -125,9 +125,9 @@ img {
 
 .oferta img {
     width: 100%;
-    max-width: 250px; /* Ajuste esse valor conforme necessário */
+    max-width: 300px; /* Ajuste esse valor conforme necessário */
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .contato {
