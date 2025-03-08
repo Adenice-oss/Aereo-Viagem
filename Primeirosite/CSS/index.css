@@ -107,7 +107,7 @@ img {
 }
 
 .plano, .oferta {
-    background: #534d4d;
+    background: #504848;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -152,7 +152,7 @@ form button {
 }
 
 footer {
-    background: #005b96;
+    background: #40474b;
     color: white;
     text-align: center;
     padding: 20px;
