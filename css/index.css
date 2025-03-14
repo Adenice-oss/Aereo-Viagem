@@ -12,7 +12,9 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: #333;
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Cabeçalho */
@@ -58,6 +60,7 @@ nav ul li a {
     margin: 20px auto;
     width: 80%;
     border-radius: 10px;
+    width: 80%;
 }
 
 /* Seção Planos */
@@ -89,7 +92,6 @@ nav ul li a {
     color: white;
     cursor: pointer;
     border-radius: 5px;
-    width: 100%;
 }
 
 /* Seção Promoções */
@@ -152,4 +154,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: auto;
 }
