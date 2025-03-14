@@ -14,11 +14,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     width: 50px;
     margin-right: 10px;
+}
+
+nav{
+    margin-left: auto;
 }
 
 nav ul {
