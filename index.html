@@ -1,43 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aereo Viagem</title>
     <link rel="stylesheet" href="css/index.css">
-
-    <script>
-        function mostrarAlerta() {
-            alert("Compra realizada com sucesso!");
-        }
-    </script>
 </head>
 <body>
-
     <header>
-        <div class="header-content">
-            <div class="logo-container">
-                <img src="imagens/logo.png" alt="Logo Aereo Viagem" class="logo">
-                <h1>Aereo Viagem</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#sobre-nos">Sobre Nós</a></li>
-                    <li><a href="#planos">Nossos Planos</a></li>
-                    <li><a href="#promocoes">Promoções</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo Aereo Viagem">
+            <h1>Aereo Viagem</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#planos">Nossos Planos</a></li>
+                <li><a href="#promocoes">Promoções</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section class="sobre" id="sobre-nos">
+    
+    <section class="hero">
+    </section>
+    
+    <section id="sobre">
         <h2>Aereo Viagem: Sua Agência de Viagens</h2>
         <p>Na Aereo Viagem, cada jornada é planejada com excelência para proporcionar experiências inesquecíveis.</p>
         <p>Pacotes personalizados para todos os estilos e orçamentos, garantimos conforto, segurança e momentos memoráveis.</p>
         <p>Viajar é mais do que se deslocar, é viver novas histórias—e nós estamos aqui para tornar cada capítulo da sua viagem único e especial.</p>
     </section>
-
-    <section class="planos" id="planos">
+    
+    <section id="planos">
         <h2>Nossos Planos de Viagem</h2>
         <div class="planos-container">
             <div class="plano">
@@ -48,7 +42,7 @@
                     <li>Acomodações simples</li>
                     <li>Atendimento online</li>
                 </ul>
-                <button onclick="mostrarAlerta()">Comprar Agora</button>
+                <button>Comprar Agora</button>
             </div>
             <div class="plano">
                 <h3>Padrão</h3>
@@ -58,7 +52,7 @@
                     <li>Atendimento 24 horas</li>
                     <li>Experiências exclusivas</li>
                 </ul>
-                <button onclick="mostrarAlerta()">Comprar Agora</button>
+                <button>Comprar Agora</button>
             </div>
             <div class="plano">
                 <h3>Premium</h3>
@@ -68,36 +62,36 @@
                     <li>Acomodações de luxo</li>
                     <li>Experiências personalizadas</li>
                 </ul>
-                <button onclick="mostrarAlerta()">Comprar Agora</button>
+                <button>Comprar Agora</button>
             </div>
         </div>
     </section>
-
-    <section class="ofertas" id="promocoes">
+    
+    <section id="promocoes">
         <h2>Ofertas Imperdíveis</h2>
-        <div class="ofertas-container">
-            <div class="oferta">
+        <div class="promocoes-container">
+            <div class="promocao">
                 <img src="imagens/praia.jpg" alt="Praia Tropical">
                 <h3>Praia Tropical</h3>
                 <p>R$199</p>
-                <button onclick="mostrarAlerta()">Comprar Agora</button>
+                <button>Comprar Agora</button>
             </div>
-            <div class="oferta">
+            <div class="promocao">
                 <img src="imagens/montanhas.jpg" alt="Aventura na Montanha">
                 <h3>Aventura na Montanha</h3>
                 <p>R$299</p>
-                <button onclick="mostrarAlerta()">Comprar Agora</button>
+                <button>Comprar Agora</button>
             </div>
-            <div class="oferta">
+            <div class="promocao">
                 <img src="imagens/manaus.jpg" alt="Cultura e História">
                 <h3>Cultura e História</h3>
                 <p>R$399</p>
-                <button onclick="mostrarAlerta()">Comprar Agora</button>
+                <button>Comprar Agora</button>
             </div>
         </div>
     </section>
-
-    <section class="contato">
+    
+    <section id="contato">
         <h2>Fale Conosco</h2>
         <form>
             <input type="text" placeholder="Nome" required>
@@ -106,14 +100,13 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-
+    
     <footer>
-        <h2>Contato</h2>
+        <h3>Contato</h3>
         <p>+55 92 1234-5678</p>
         <p>contato@aereoviagem.com.br</p>
         <p>Rua das Viagens, 123, Manaus, AM</p>
-        <p>© 2025 Aereo Viagem. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Aereo Viagem. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
