@@ -1,127 +1,217 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset para remover margens e preenchimentos padrão */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url("imagens/fundo.jp") no-repeat center/cover;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
+/* Estilo geral do corpo */
+body {
+    background-image: url('../imagens/fundo.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Para manter fixo ao rolar */
+    color: #333;
+    text-align: center;
+}
+
+/* ======================== CABEÇALHO ======================== */
 header {
-    background: #554b41;
-    color: white;
-    padding: 15px;
+    background-color: #4a403a;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 80p;
-}
-
-.logo-container{
-    display: flex;
     align-items: center;
+    padding: 15px 50px;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
     width: 50px;
     margin-right: 10px;
 }
 
-nav ul {
-    list-style: none;
+.logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+nav {
     display: flex;
     gap: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
+nav a {
     color: white;
+    text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ======================== SEÇÃO SOBRE ======================== */
 .sobre {
-    position: relative;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url("imagens/fundo.jpg");
-    background-size: cover;
-    background-position: center;
+    padding: 40px 20px;
 }
 
-.sobre::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 0;
+.sobre h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
-.sobre h2, .sobre p {
-    position: relative;
-    z-index: 1;
+.sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
 }
 
-.planos-container, .ofertas-container {
+/* ======================== SEÇÃO PLANOS ======================== */
+.planos {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.planos h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.container-planos {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
-.plano, .oferta {
-    background: #9bd8e7;
+.plano {
+    background: lightblue;
     padding: 20px;
     border-radius: 10px;
+    width: 250px;
     text-align: center;
-    width: 30%;
-    min-width: 280px;
 }
 
-.plano button, .oferta button {
-    background: #005b96;
+.plano h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007BFF;
     color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-.oferta img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+.botao:hover {
+    background: #0056b3;
+}
+
+/* ======================== SEÇÃO PROMOÇÕES ======================== */
+.promocoes {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.promocoes h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.container-promocoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.promo {
+    background: #f0f0f0;
+    padding: 20px;
     border-radius: 10px;
-}
-
-.contato {
-    background: #ddd;
+    width: 250px;
     text-align: center;
-    padding: 30px;
 }
 
-form input, form textarea {
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
+.promo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.promo h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* ======================== FORMULÁRIO DE CONTATO ======================== */
+.contato {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.contato h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.formulario label {
+    font-weight: bold;
     display: block;
+    margin-top: 10px;
 }
 
-form button {
-    background: #005b96;
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #007BFF;
     color: white;
-    padding: 10px 20px;
     border: none;
-    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
+.formulario button:hover {
+    background: #0056b3;
+}
+
+/* ======================== RODAPÉ ======================== */
 footer {
-    background: #1d1d1f;
+    background: #4a403a;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 20px;
 }
