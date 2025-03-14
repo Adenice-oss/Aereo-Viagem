@@ -130,10 +130,10 @@ img {
 }
 
 form input, form textarea {
-    display: block;
     width: 80%;
     margin: 10px auto;
     padding: 10px;
+    display: block;
 }
 
 form button {
