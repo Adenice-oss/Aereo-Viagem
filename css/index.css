@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url("imagens/fundo.jpg") no-repeat/cover;
+    background: url("imagens/fundo.jpg") no-repeat center/cover; /* A imagem de fundo será aplicada a todo o corpo */
     background-attachment: fixed;
 }
 
@@ -12,12 +12,11 @@ header {
     color: white;
     padding: 15px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Alinha logo e menu nas extremidades */
     align-items: center;
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     align-items: center;
 }
@@ -27,8 +26,8 @@ header {
     margin-right: 10px;
 }
 
-nav{
-    margin-left: auto;
+nav {
+    margin-left: auto; /* Garante que o menu vai para a direita */
 }
 
 nav ul {
@@ -44,7 +43,6 @@ nav ul li a {
 }
 
 .sobre {
-    background: url('imagens/fundo.jpg') no-repeat center/cover;
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -58,7 +56,7 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /* Escurece o fundo para o texto ficar visível */
     z-index: 0;
 }
 
