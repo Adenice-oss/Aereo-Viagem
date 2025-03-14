@@ -6,7 +6,6 @@ body {
     box-sizing: border-box;
     background: url('imagens/fundo.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
     min-height: 100vh; 
 }
 
