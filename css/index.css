@@ -8,7 +8,7 @@
 
 /* Corpo do site */
 body {
-    background: url('../imagens/fundo.jpg') no-repeat center center fixed;
+    background: url('imagens/fundo.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     text-align: center;
