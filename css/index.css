@@ -18,8 +18,8 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    z-index: 2;
-    height: 120px;
+    z-index: 1;
+    height: 100px;
 }
 
 /* Alinhando logo e texto lado a lado */
