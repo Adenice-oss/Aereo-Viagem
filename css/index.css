@@ -45,7 +45,6 @@ nav ul li a {
     text-align: center;
     padding: 50px 20px;
     position: relative;
-    background: transparent;
 }
 
 .sobre::before {
