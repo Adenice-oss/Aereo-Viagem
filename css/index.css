@@ -37,6 +37,14 @@ header {
     font-family: Arial, sans-serif;
   }
   
+  /* Plano de fundo para todo o site */
+body {
+    background: url('imagens/fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
 .logo {
     width: 50px;
     margin-right: 10px;
