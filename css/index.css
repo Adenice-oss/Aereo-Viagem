@@ -94,9 +94,12 @@ nav ul li a {
     line-height: 1.5;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.planos-container, .ofertas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .plano, .oferta {
