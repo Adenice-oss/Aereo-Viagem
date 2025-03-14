@@ -1,208 +1,159 @@
-/* Reseta os estilos padrões */
+
+/* Resetando margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos globais */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-image: url('imagens/fundo.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    background-attachment: fixed;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 40px;
+    color: white;
 }
 
-header .logo {
+.logo {
     display: flex;
     align-items: center;
 }
 
-header .logo img {
-    width: 50px;
+.logo img {
+    height: 50px;
     margin-right: 10px;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    font-size: 18px;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
+    color: white;
+    font-weight: bold;
 }
 
 /* Seção Sobre Nós */
-#sobre-nos {
+.sobre-nos {
     text-align: center;
-    padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    width: 80%;
 }
 
-#sobre-nos h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#sobre-nos p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Seção Nossos Planos */
-#nossos-planos {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-#nossos-planos h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.planos {
+/* Seção Planos */
+.planos-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
 .plano {
-    background-color: rgba(0, 0, 0, 0.7);
+    background: lightblue;
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
+    text-align: center;
+    width: 300px;
 }
 
 .plano h3 {
-    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.plano p {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.plano ul {
-    list-style: none;
-    margin-bottom: 20px;
-}
-
 .plano button {
-    background-color: #00aaff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.plano button:hover {
-    background-color: #0088cc;
-}
-
-/* Seção Ofertas Imperdíveis */
-#promocoes {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-#promocoes h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.ofertas {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.oferta img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.oferta button {
-    background-color: #00aaff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.oferta button:hover {
-    background-color: #0088cc;
-}
-
-/* Seção Fale Conosco */
-#fale-conosco {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-#fale-conosco form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#fale-conosco input,
-#fale-conosco textarea {
-    width: 100%;
+    margin-top: 10px;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-#fale-conosco button {
-    background-color: #00aaff;
-    color: white;
     border: none;
-    padding: 10px 20px;
+    background: darkblue;
+    color: white;
     cursor: pointer;
     border-radius: 5px;
 }
 
-#fale-conosco button:hover {
-    background-color: #0088cc;
+/* Seção Promoções */
+.promocoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.promocao {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.promocao img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Seção Contato */
+.contato-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    padding: 10px;
+    background: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Rodapé */
 footer {
+    background: black;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-footer .contato h3 {
-    font-size: 24px;
-}
-
-footer .contato p {
-    font-size: 18px;
+    margin-top: auto;
 }
