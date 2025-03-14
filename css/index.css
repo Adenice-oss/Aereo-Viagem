@@ -78,13 +78,44 @@ nav ul li a {
     padding: 20px;
 }
 
+.planos-container, .ofertas-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#planos .plano, #promocoes .promocao {
+    background-color: rgba(170, 202, 228, 0.8);  /* Fundo suave */
+    color: 
+    rgba(15, 14, 14, 0.815);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+
+#planos .plano h3, #promocoes .promocao h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#planos .plano p, #promocoes .promocao p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .plano, .oferta {
     background: #9bd8e7;
     padding: 20px;
-    border-radius: 10px;
     text-align: center;
+    border-radius: 10px;
     width: 30%;
-    min-width: 280px;
 }
 
 .plano button, .oferta button {
@@ -100,7 +131,7 @@ nav ul li a {
     width: 100%;
     max-width: 300px; /* Ajuste esse valor conforme necessário */
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .contato {
@@ -110,17 +141,17 @@ nav ul li a {
 }
 
 form input, form textarea {
+    display: block;
     width: 80%;
     margin: 10px auto;
     padding: 10px;
-    display: block;
 }
 
 form button {
     background: #005b96;
     color: white;
-    padding: 10px 20px;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
