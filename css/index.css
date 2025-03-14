@@ -89,9 +89,9 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-#planos .plano p, #promocoes .promocao p {
-    font-size: 1rem;
-    line-height: 1.5;
+.sobre h2, .sobre p {
+    position: relative;
+    z-index: 1;
 }
 
 .planos-container, .ofertas-container {
