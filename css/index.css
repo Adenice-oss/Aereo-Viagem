@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 .sobre {
-    background: antiquewhite
+    background: url("imagens/fundo.jpg") no-repeat center/cover;
     color: white;
     text-align: center;
     padding: 50px 20px;
