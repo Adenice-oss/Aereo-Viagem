@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     background: url("imagens/fundo.jpg") no-repeat center/cover;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 header {
