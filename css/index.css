@@ -102,9 +102,10 @@ img {
 .plano, .oferta {
     background: #9bd8e7;
     padding: 20px;
-    text-align: center;
     border-radius: 10px;
+    text-align: center;
     width: 30%;
+    min-width: 280px;
 }
 
 .plano button, .oferta button {
