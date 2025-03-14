@@ -1,4 +1,4 @@
-/* Resetando margens e paddings */
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -7,43 +7,43 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('imagens/fundo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: #f4f4f4;
     color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Cabeçalho */
 header {
+    background: #554b41;
+    color: white;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 40px;
-    color: white;
+    padding: 0 20px;
 }
 
-.logo {
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo-container {
     display: flex;
     align-items: center;
 }
 
-.logo img {
-    height: 50px;
+.logo {
+    width: 50px;
+    height: auto;
     margin-right: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -53,106 +53,84 @@ nav ul li a {
 }
 
 /* Seção Sobre Nós */
-.sobre-nos {
+.sobre {
+    background: url('../imagens/fundo.jpg') center/cover no-repeat;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-    width: 80%;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
 }
 
-/* Seção Planos */
-.planos-container {
+.sobre::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/* Planos e Promoções */
+.planos-container, .ofertas-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 40px;
-    flex-wrap: wrap;
-}
-
-.plano {
-    background: lightblue;
     padding: 20px;
-    border-radius: 10px;
+}
+
+.plano, .oferta {
+    background: rgba(170, 202, 228, 0.8);
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
     text-align: center;
-    width: 300px;
+    width: 30%;
 }
 
-.plano h3 {
-    margin-bottom: 10px;
-}
-
-.plano button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    background: darkblue;
+.plano button, .oferta button {
+    background: #005b96;
     color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-/* Seção Promoções */
-.promocoes-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    flex-wrap: wrap;
-}
-
-.promocao {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-}
-
-.promocao img {
+.oferta img {
     width: 100%;
     max-width: 300px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-/* Seção Contato */
-.contato-container {
+/* Contato */
+.contato {
+    background: #ddd;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.formulario input,
-.formulario textarea {
-    width: 300px;
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-.formulario button {
-    padding: 10px;
-    background: darkblue;
+form button {
+    background: #005b96;
     color: white;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 /* Rodapé */
 footer {
-    background: black;
+    background: #1d1d1f;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: auto;
 }
