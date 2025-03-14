@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:#9bd8e7;
+    background: url("imagens/fundo.jp") no-repeat center/cover;
     min-height: 100vh;
 }
 
