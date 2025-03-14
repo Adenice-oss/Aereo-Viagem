@@ -1,26 +1,27 @@
-/* Reset */
+/* Resetando margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Corpo do site */
 body {
-    background: url('imagens/fundo.jpg') no-repeat center center fixed;
+    font-family: Arial, sans-serif;
+    background-image: url('imagens/fundo.jpg');
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #333;
-    text-align: center;
 }
 
-/* ========== CABEÇALHO ========== */
+/* Cabeçalho */
 header {
-    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 40px;
+    color: white;
 }
 
 .logo {
@@ -29,195 +30,123 @@ header {
 }
 
 .logo img {
-    width: 50px;
-    height: auto;
+    height: 50px;
     margin-right: 10px;
 }
 
-.logo h1 {
-    color: white;
-    font-size: 24px;
-}
-
-nav {
+nav ul {
+    list-style: none;
     display: flex;
-    gap: 20px;
 }
 
-nav a {
-    color: white;
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    font-size: 16px;
+    color: white;
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ========== SEÇÃO SOBRE ========== */
-.sobre {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 40px 20px;
-}
-
-.sobre h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.sobre p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: auto;
-}
-
-/* ========== SEÇÃO PLANOS (AGORA CENTRALIZADO) ========== */
-.planos {
+/* Seção Sobre Nós */
+.sobre-nos {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
     padding: 40px;
-    background-color: #f8f8f8;
+    margin: 20px;
+    border-radius: 10px;
 }
 
-.planos h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-
-/* Alinhando os planos lado a lado */
-.container-planos {
+/* Seção Planos */
+.planos-container {
     display: flex;
-    justify-content: center; /* Centraliza os planos */
-    gap: 20px; /* Espaçamento entre os planos */
-    flex-wrap: wrap; /* Garante que fique responsivo */
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
 .plano {
     background: lightblue;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 .plano h3 {
-    font-size: 22px;
     margin-bottom: 10px;
 }
 
-.plano p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.botao {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #007BFF;
+.plano button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: darkblue;
     color: white;
-    text-decoration: none;
+    cursor: pointer;
     border-radius: 5px;
 }
 
-.botao:hover {
-    background: #0056b3;
-}
-
-/* ========== SEÇÃO PROMOÇÕES (AGORA ALINHADO) ========== */
-.promocoes {
-    padding: 40px;
-    background-color: #fff;
-}
-
-.promocoes h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-
-.container-promocoes {
+/* Seção Promoções */
+.promocoes-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Responsivo */
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
-.promo {
-    background: #f0f0f0;
+.promocao {
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
-/* Ajustando tamanho das imagens para evitar exageros */
-.promo img {
+.promocao img {
     width: 100%;
-    max-width: 250px; /* Definindo um tamanho máximo */
-    height: 150px; /* Altura fixa */
-    object-fit: cover; /* Garante que a imagem fique bem ajustada */
+    height: 180px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
-.promo h3 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-/* ========== FORMULÁRIO DE CONTATO ========== */
-.contato {
+/* Seção Contato */
+.contato-container {
+    text-align: center;
     padding: 40px;
-    background-color: #f8f8f8;
-}
-
-.contato h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
 }
 
 .formulario {
-    max-width: 500px;
-    margin: auto;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.formulario label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-.formulario input, .formulario textarea {
-    width: 100%;
+.formulario input,
+.formulario textarea {
+    width: 300px;
     padding: 10px;
-    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .formulario button {
-    display: block;
-    width: 100%;
     padding: 10px;
-    margin-top: 15px;
-    background: #007BFF;
+    background: darkblue;
     color: white;
     border: none;
+    cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
 }
 
-.formulario button:hover {
-    background: #0056b3;
-}
-
-/* ========== RODAPÉ ========== */
+/* Rodapé */
 footer {
-    background: #4a403a;
+    background: black;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
 }
