@@ -58,6 +58,13 @@ nav ul li a {
     border-radius: 10px;
 }
 
+#sobre-nos {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
 /* Seção Planos */
 .planos-container {
     display: flex;
