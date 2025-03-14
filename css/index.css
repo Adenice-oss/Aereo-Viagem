@@ -1,41 +1,24 @@
-* Definindo o estilo para o body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-
-    header {
-        background: #554b41;
-        color: white;
-        padding: 15px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-}   
-
-/* Alinhando logo e texto lado a lado */
-.header-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
 }
 
-.logo-container {
+header {
+    background: #554b41;
+    color: white;
+    padding: 15px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
     width: 50px;
-    height: auto;
     margin-right: 10px;
 }
 
-/* Estilo para o menu de navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -48,12 +31,10 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Estilo para a seção Sobre */
 .sobre {
-    background: url("imagens/fundo.jpg") no-repeat/cover;
-    background-size: cover;
+    background: url('../imagens/fundo.jpg') no-repeat center/cover;
+    color: white;
     text-align: center;
-    color: rgb(16, 19, 20);
     padding: 50px 20px;
     position: relative;
 }
@@ -65,10 +46,14 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
 }
 
+.sobre h2, .sobre p {
+    position: relative;
+    z-index: 1;
+}
 
 .planos-container, .ofertas-container {
     display: flex;
@@ -78,49 +63,18 @@ nav ul li a {
     padding: 20px;
 }
 
-.planos-container, .ofertas-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-#planos .plano, #promocoes .promocao {
-    background-color: rgba(170, 202, 228, 0.8);  /* Fundo suave */
-    color: 
-    rgba(15, 14, 14, 0.815);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    margin: 10px;
-}
-
-#planos .plano h3, #promocoes .promocao h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-#planos .plano p, #promocoes .promocao p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .plano, .oferta {
     background: #9bd8e7;
     padding: 20px;
-    text-align: center;
     border-radius: 10px;
+    text-align: center;
     width: 30%;
+    min-width: 280px;
 }
 
 .plano button, .oferta button {
     background: #005b96;
-    color: rgb(255, 255, 255);
+    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -129,9 +83,9 @@ img {
 
 .oferta img {
     width: 100%;
-    max-width: 300px; /* Ajuste esse valor conforme necessário */
+    max-width: 300px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .contato {
@@ -141,17 +95,17 @@ img {
 }
 
 form input, form textarea {
-    display: block;
     width: 80%;
     margin: 10px auto;
     padding: 10px;
+    display: block;
 }
 
 form button {
     background: #005b96;
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
     cursor: pointer;
 }
 
