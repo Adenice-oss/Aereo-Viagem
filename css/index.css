@@ -1,4 +1,4 @@
-/* Reset para remover margens e preenchimentos padrão */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +6,17 @@
     font-family: Arial, sans-serif;
 }
 
-/* Estilo geral do corpo */
+/* Corpo do site */
 body {
-    background-image: url('imagens/fundo.jpg'); /* Imagem de fundo */
+    background: url('../imagens/fundo.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Para manter fixo ao rolar */
     color: #333;
     text-align: center;
 }
 
-/* ======================== CABEÇALHO ======================== */
+/* ========== CABEÇALHO ========== */
 header {
-    background-color: #4a403a;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +29,8 @@ header {
 }
 
 .logo img {
-    width: 30px;
+    width: 50px;
+    height: auto;
     margin-right: 10px;
 }
 
@@ -56,7 +55,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ======================== SEÇÃO SOBRE ======================== */
+/* ========== SEÇÃO SOBRE ========== */
 .sobre {
     background: rgba(0, 0, 0, 0.7);
     color: white;
@@ -75,7 +74,7 @@ nav a:hover {
     margin: auto;
 }
 
-/* ======================== SEÇÃO PLANOS ======================== */
+/* ========== SEÇÃO PLANOS (AGORA CENTRALIZADO) ========== */
 .planos {
     padding: 40px;
     background-color: #f8f8f8;
@@ -86,10 +85,12 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+/* Alinhando os planos lado a lado */
 .container-planos {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Centraliza os planos */
+    gap: 20px; /* Espaçamento entre os planos */
+    flex-wrap: wrap; /* Garante que fique responsivo */
 }
 
 .plano {
@@ -98,6 +99,7 @@ nav a:hover {
     border-radius: 10px;
     width: 250px;
     text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .plano h3 {
@@ -123,7 +125,7 @@ nav a:hover {
     background: #0056b3;
 }
 
-/* ======================== SEÇÃO PROMOÇÕES ======================== */
+/* ========== SEÇÃO PROMOÇÕES (AGORA ALINHADO) ========== */
 .promocoes {
     padding: 40px;
     background-color: #fff;
@@ -138,6 +140,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Responsivo */
 }
 
 .promo {
@@ -146,12 +149,15 @@ nav a:hover {
     border-radius: 10px;
     width: 250px;
     text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Ajustando tamanho das imagens para evitar exageros */
 .promo img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    max-width: 250px; /* Definindo um tamanho máximo */
+    height: 150px; /* Altura fixa */
+    object-fit: cover; /* Garante que a imagem fique bem ajustada */
     border-radius: 5px;
 }
 
@@ -160,7 +166,7 @@ nav a:hover {
     margin: 10px 0;
 }
 
-/* ======================== FORMULÁRIO DE CONTATO ======================== */
+/* ========== FORMULÁRIO DE CONTATO ========== */
 .contato {
     padding: 40px;
     background-color: #f8f8f8;
@@ -207,7 +213,7 @@ nav a:hover {
     background: #0056b3;
 }
 
-/* ======================== RODAPÉ ======================== */
+/* ========== RODAPÉ ========== */
 footer {
     background: #4a403a;
     color: white;
