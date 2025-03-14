@@ -108,9 +108,9 @@ nav ul li a {
 
 .promocao img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 5px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
 }
 
 /* Seção Contato */
