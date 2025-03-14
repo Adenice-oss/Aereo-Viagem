@@ -3,8 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url("imagens/fundo.jpg") no-repeat center/cover;
-    background-attachment: fixed;
+    background-color:#9bd8e7;
     min-height: 100vh;
 }
 
