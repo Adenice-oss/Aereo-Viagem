@@ -14,7 +14,29 @@ header {
     justify-content: space-between;
 }
 
-
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 10px; /* Espaço entre a logo e o texto */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
 .logo {
     width: 50px;
     margin-right: 10px;
