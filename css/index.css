@@ -6,23 +6,21 @@ body {
     box-sizing: border-box;
     }
 
-/* Estilo do cabeçalho */
-header {
-    background: rgba(85, 75, 65, 0.8); /* Ajuste de cor mais suave */
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
-    height: 100px;
-}
+    header {
+        background: #554b41;
+        color: white;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+}   
 
 /* Alinhando logo e texto lado a lado */
 .header-content {
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -33,12 +31,8 @@ header {
 
 .logo {
     width: 50px;
+    height: auto;
     margin-right: 10px;
-}
-
-h1 {
-    font-size: 2rem;
-    font-family: Arial, sans-serif;
 }
 
 /* Estilo para o menu de navegação */
@@ -56,9 +50,11 @@ nav ul li a {
 
 /* Estilo para a seção Sobre */
 .sobre {
+    background: url("imagens/fundo.jpg") no-repeat/cover;
+    background-size: cover;
     text-align: center;
+    color: rgb(16, 19, 20);
     padding: 50px 20px;
-    color: white;
     position: relative;
 }
 
