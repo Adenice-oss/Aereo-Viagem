@@ -3,10 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url("imagens/fundo.jpg") no-repeat center/cover;
+    background: url("imagens/fundo.jpg") no-repeat center/cover !important;
     background-attachment: fixed;
-    min-height: 100vh;
-    height: 100%;
 }
 
 header {
