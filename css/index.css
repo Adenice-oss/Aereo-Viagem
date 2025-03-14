@@ -12,6 +12,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: #333;
+    text-align: center;
 }
 
 /* Cabeçalho */
@@ -54,16 +55,10 @@ nav ul li a {
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     padding: 40px;
-    margin: 20px;
+    margin: 20px auto;
+    width: 80%;
     border-radius: 10px;
 }
-
-#sobre-nos {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
 
 /* Seção Planos */
 .planos-container {
@@ -94,6 +89,7 @@ nav ul li a {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
 }
 
 /* Seção Promoções */
