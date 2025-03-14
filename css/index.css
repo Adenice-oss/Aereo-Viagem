@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url("imagens/fundo.jpg") no-repeat/cover;
+    background: url("../imagens/") no-repeat/cover;
     background-attachment: fixed;
 }
 
