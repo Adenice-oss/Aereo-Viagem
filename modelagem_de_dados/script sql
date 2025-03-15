@@ -1,0 +1,40 @@
+CREATE TABLE Usuários 
+( 
+ id_usuario (INT, PRIMARY KEY) INT,  
+ nome (VARCHAR(255)) INT,  
+ email (VARCHAR(255), UNIQUE) INT,  
+ telefone (VARCHAR(15)) INT,  
+ endereco (VARCHAR(255)) INT,  
+); 
+
+CREATE TABLE Planos 
+( 
+ id_plano (INT, PRIMARY KEY) INT,  
+ nome_plano (VARCHAR(100)) INT,  
+ preco (DECIMAL(10, 2)) INT,  
+ descricao (TEXT) INT,  
+); 
+
+CREATE TABLE Pagamento 
+( 
+ idReserva INT,  
+); 
+
+CREATE TABLE Reserva 
+( 
+ id_reserva (INT, PRIMARY KEY) INT,  
+ id_usuario (INT, FOREIGN KEY para Usuário) INT,  
+ id_plano (INT, FOREIGN KEY para Plano) INT,  
+ data_reserva (DATETIME) INT,  
+ status (VARCHAR(50)) INT,  
+); 
+
+CREATE TABLE faz 
+( 
+ idPlanos INT PRIMARY KEY,  
+ idReserva INT PRIMARY KEY,  
+); 
+
+ALTER TABLE Pagamento ADD FOREIGN KEY(idReserva) REFERENCES Reserva (idReserva)
+ALTER TABLE faz ADD FOREIGN KEY(idPlanos) REFERENCES Planos (idPlanos)
+ALTER TABLE faz ADD FOREIGN KEY(idReserva) REFERENCES Reserva (idReserva)
